@@ -30,10 +30,10 @@
   :group 'help)
 
 ;;;###autoload
-(defcustom memento-mori-birth-date ""
+(eval-and-compile (defcustom memento-mori-birth-date ""
   "*Your birth date in YYYY-MM-DD format."
   :type 'string
-  :group 'memento-mori)
+  :group 'memento-mori))
 
 (defvar memento-mori-age-string ""
   "Your age shown in the mode line when Memento-Mori mode is on.")
